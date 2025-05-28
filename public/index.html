@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submit-form" method="POST">
+        <label>NAME:</label>
+        <input type="text" name="name" required minlength="3" maxlength="30"/><br/><br/>
+        <label>EMAIL:</label>
+        <input type ="text" name="email" required/>
+        <br/><br/>
+        <label>COURSE:</label>
+        <input type="text" name="course" required minlength="2" maxlength="20" />
+        <br/><br/>
+        <label>AGE:</label>
+        <input type="number" name="age" required minlength="10" maxlength="100" />
+        <br/><br/>
+        <button  type="submit" >REGISTER</button>
+
+    </form>
+</body>
+</html>
