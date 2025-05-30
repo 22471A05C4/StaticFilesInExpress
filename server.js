@@ -18,11 +18,11 @@ app.post('/submit-form',(req,res)=>{
         errors.push('valid email is required');
     }
     if(!course || course.trim().length<3 || course.trim().length>20){
-        errors.push('course must be between 3 and 20');
+        errors.push('course must be between 3 and 30');
     }
     const ageNum=Number(age);
     if(!age || isNaN(ageNum) || ageNum<10 || ageNum< 100){
-        errors.push('age must be between 3 and 30');
+        errors.push('age must be between 3 and 35');
     }
     if(errors.length>0){
         res.status(400).send(`<h3>Errors:</h3>
